@@ -1,0 +1,35 @@
+@use "../../../styles" as *;
+
+.hamburger-btn {
+  position: relative;
+  top: 2rem;
+  left: 1.5rem;
+  position: fixed;
+  z-index: 1000;
+  opacity: 0;
+  animation: menuBtnFade 2s 6s forwards ease-in;
+
+  &_container {
+    position: relative;
+  }
+
+  &_line {
+    display: block;
+    width: 4rem;
+    height: 4px;
+    background-color: $white-second;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+@keyframes menuBtnFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

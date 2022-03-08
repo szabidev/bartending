@@ -1,0 +1,18 @@
+@use "../../styles" as *;
+
+.sidebar {
+  width: 100%;
+  max-width: 320px;
+  // animate margin
+  margin-left: -320px;
+  height: 100vh;
+  background-color: rgba($black, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+// .menu {
+//   list-style: none;
+// }

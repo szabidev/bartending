@@ -1,0 +1,21 @@
+{
+  "history101": {
+    "historyTabText": "History 101"
+  },
+
+  "fermentation": {
+    "fermentationTabText": "Fermentation"
+  },
+
+  "distillation": {
+    "distillationTabText": "Distillation"
+  },
+
+  "techniques": {
+    "techniquesTabText": "Techniques"
+  },
+
+  "recipes": {
+    "recipesTabText": "Recipes"
+  }
+}

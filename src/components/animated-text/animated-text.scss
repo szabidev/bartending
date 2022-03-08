@@ -1,0 +1,46 @@
+@use "../../styles" as *;
+// @import "../../styles/variables.scss";
+
+.text-container {
+  width: 90%;
+  color: $white;
+  font-size: 5rem;
+  font-weight: 100;
+  padding-top: 10rem;
+  margin: 0 auto;
+}
+
+.text-main,
+.text-second {
+  display: block;
+  width: 100%;
+  text-align: center;
+  // visibility: hidden;
+  opacity: 0;
+}
+
+.text-main {
+  animation: fadeIn 4s ease-in-out;
+  animation-delay: 1s;
+}
+
+.text-second {
+  animation: fadeIn 4s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  // Ask how is it better to remove element
+  100% {
+    opacity: 0;
+    // display: none;
+  }
+}
