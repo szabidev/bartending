@@ -3,16 +3,38 @@
 .sidebar {
   width: 100%;
   max-width: 320px;
-  // animate margin
-  margin-left: -320px;
   height: 100vh;
   background-color: rgba($black, 0.3);
   position: absolute;
   top: 0;
-  left: 0;
+  left: -320px;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   z-index: 100;
-}
 
-// .menu {
-//   list-style: none;
-// }
+  &.open {
+    -webkit-transform: translateX(320px);
+    transform: translateX(320px);
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15rem;
+
+    .social-container {
+      margin-top: 4rem;
+      width: 100%;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

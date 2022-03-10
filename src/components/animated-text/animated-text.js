@@ -1,17 +1,15 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import ReactDOM from "react-dom";
 import axios from "axios";
 
 // Make seperate files for requests !!!!!!!
 
-const AnimatedText = (props) => {
-  const { welcomeTextFirst, welcomeTextSecond } = props || {};
+const AnimatedText = () => {
   // data = the info from the json file
   const [data, setData] = useState([]);
   const baseURL = "JSON/welcomeText.json";
 
-  // using useffect to make a get request at component load (first load)
+  // using useffect to make a GET request at component load (first load)
   useEffect(() => {
     axios.get(baseURL).then((response) => {
       // setData = extracting the value from the json file, updating state

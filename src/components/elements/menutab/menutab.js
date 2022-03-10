@@ -14,5 +14,3 @@ const MenuTab = (props) => {
 };
 
 export default MenuTab;
-
-// MAP THROUGH THEM AND LIST THEM, ADD KEY PROP TO IT

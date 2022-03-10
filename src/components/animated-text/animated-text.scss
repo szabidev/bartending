@@ -17,16 +17,17 @@
   text-align: center;
   // visibility: hidden;
   opacity: 0;
+  pointer-events: none;
 }
 
 .text-main {
   animation: fadeIn 4s ease-in-out;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .text-second {
-  animation: fadeIn 4s ease-in-out forwards;
-  animation-delay: 2s;
+  animation: fadeIn 4s ease-in-out;
+  animation-delay: 1.5s;
 }
 
 @keyframes fadeIn {
